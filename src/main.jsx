@@ -9,7 +9,7 @@ import PageNotFound from './pages/PageNotFound'
 import Contato from './pages/Contato'
 import MovieList from './pages/MovieList'
 import Movie from './components/Movie/Movie'
-import { GoogleOAuthProvider } from '@react-oauth/google';
+//import { GoogleOAuthProvider } from '@react-oauth/google';
 
 const router = createBrowserRouter([
 {
@@ -28,8 +28,8 @@ const router = createBrowserRouter([
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <GoogleOAuthProvider clientId="926189645590-kn7p3g6rv5nh461docfscomsk1b9n7q5.apps.googleusercontent.com">
+    {/* <GoogleOAuthProvider clientId="926189645590-kn7p3g6rv5nh461docfscomsk1b9n7q5.apps.googleusercontent.com"> */}
       <RouterProvider router={router} />
-    </GoogleOAuthProvider>
+    {/* </GoogleOAuthProvider> */}
   </React.StrictMode>
 )
