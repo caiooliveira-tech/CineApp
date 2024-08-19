@@ -37,7 +37,7 @@ const ArticleList = () => {
   <div className="pb-20 sm:mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 max-w-[1600px]">
     { filteredArticles.length > 0 ?
       filteredArticles.map((article, index) => <Article key={index} {...article} />):
-      (<p className='text-xl col-span-3 mt-4 text-center'>Nenhum Artigo Encontrado 😔 </p>)
+      <p className='text-xl col-span-3 mt-4 text-center'>Nenhum Artigo Encontrado 😔 </p>
     }
   </div>
   </>
